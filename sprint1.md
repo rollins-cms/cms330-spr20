@@ -4,37 +4,38 @@
 * Teams:
 * Sprint Duration: Jan. 22 - Feb. 5
 * Quiz date/time: Feb. 5 at the beginning of class
-* Requirements due: 
+* Requirements due:
+   * problem set: Feb. 3 at end of class (12:15pm)
+   * shell project: Feb 5th at 11:59pm
 
 # Rationale: 
 Sprint 1 will teach you the basics of several fundamental concepts in operating systems.  We have to be able to talk about how applications get running time on the hardware.  The concept of processes and context switching gets us started, but then we have to talk about how the operating system can schedule multiple applications' processes.  How do we prevent a process from hogging running time on the CPU?  How can we ensure that each process will eventually finish?  How can we fairly distribute fininte resources (and how do we even define "fair")?  These are important questions that we explore when we talk about several different scheduling algorithms.  We also need to introduce the concept of privileged code which does special things and we don't want applications to be able to mess with whenever they feel like it.  As an overview, I recommend you read OSTEP Ch. 3 Dialogue which sets the stage for these concepts.
 
 # Responsibilities (What you need to know):
-1. 
-   * Processes - OSTEP Ch 4
-      * Time sharing and space sharing
-      * Context switching
-      * Review some concepts from 230: address space, stack ptr, instruction ptr, program counter
-      * Process API steps
-      * Process states
-      * Use of data structures by OS to store process info (PCBs)
-   * Process API in C - OSTEP Ch 5
-      * `fork()`, `wait()`, `exec()`
-      * Linux utilities for processes: `kill`, `ps`, `man` pages
-   * Limited Direction Execution
-      * privileged code
-      * system calls (syscalls)
-      * user mode vs. kernel mode
-      * trapping mechanism - trap, return-from-trap, trap tables
-      * cooperative and non-coooperative approaches for context switches
-      * interrupts (especially timer interrupts)
-   * Scheduling
-      * Concepts: workload, policies
-      * Metrics: turnaround time, fairness, response time
-      * Alogrithms: FIFO, SJF, STCF, Round Robin, MLFQ
-         * Classifications: preemptive vs. non-preemptive
-         * Be able to trace each algorithm
-         * Pros/cons & tradeoffs of each algo.
+1. Processes - OSTEP Ch 4
+   * Time sharing and space sharing
+   * Context switching
+   * Review some concepts from 230: address space, stack ptr, instruction ptr, program counter
+   * Process API steps
+   * Process states
+   * Use of data structures by OS to store process info (PCBs)
+2. Process API in C - OSTEP Ch 5
+   * `fork()`, `wait()`, `exec()`
+   * Linux utilities for processes: `kill`, `ps`, `man` pages
+3. Limited Direction Execution
+   * privileged code
+   * system calls (syscalls)
+   * user mode vs. kernel mode
+   * trapping mechanism - trap, return-from-trap, trap tables
+   * cooperative and non-coooperative approaches for context switches
+   * interrupts (especially timer interrupts)
+4. Scheduling
+   * Concepts: workload, policies
+   * Metrics: turnaround time, fairness, response time
+   * Alogrithms: FIFO, SJF, STCF, Round Robin, MLFQ
+      * Classifications: preemptive vs. non-preemptive
+      * Be able to trace each algorithm
+      * Pros/cons & tradeoffs of each algo.
 
 # Requirements (What you need to do):
 The "Requirements" grade is the problem set and shell project. The scrum artifacts will be graded in a "Scrumage" grade.
@@ -50,8 +51,8 @@ The "Requirements" grade is the problem set and shell project. The scrum artifac
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn) for more resources. 
    * OSTEP: Ch 3 - 8 
-   * [https://www.youtube.com/watch?v=exlaEOVRWQM](Video lecture) (~40 min) on FIFO, SJF, SRFT, Round Robin scheduling
-   * [https://www.youtube.com/watch?v=_NlmflJQDI4](Video lecture) (~22 min) on MLFQ scheduling
+   * [Video lecture](https://www.youtube.com/watch?v=exlaEOVRWQM) (~40 min) on FIFO, SJF, SRFT, Round Robin scheduling
+   * [Video lecture](https://www.youtube.com/watch?v=_NlmflJQDI4) (~22 min) on MLFQ scheduling
    * Practice quiz
    
 # Reality Check:
