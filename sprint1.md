@@ -67,4 +67,4 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
   * Wedneday: Make sure you push shell project to Github for final submission (neatly formatted, commented, etc).  Quiz (30 minutes), Sprint 1 retrospective, and Sprint 2 planning.
 
 # Retrospective:
-  * Complete this survey.  Each team member should complete a survey.
+  * Complete [sprint retrospective survey](https://rollins.co1.qualtrics.com/jfe/form/SV_3rAIzhpHFYbIixf?course=330s20&sprint=1).  Each team member should complete a survey.
