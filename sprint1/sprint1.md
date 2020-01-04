@@ -49,7 +49,7 @@ The "Requirements" grade is the problem set and shell project. The scrum artifac
    * Complete the problem set.
    
 # Resources:  
-I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn) for more resources. 
+I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms330s20&sprint=1) for more resources. 
    * OSTEP: Ch 3 - 8 
    * [Video lecture](https://www.youtube.com/watch?v=exlaEOVRWQM) (~40 min) on FIFO, SJF, SRFT, Round Robin scheduling
    * [Video lecture](https://www.youtube.com/watch?v=_NlmflJQDI4) (~22 min) on MLFQ scheduling
