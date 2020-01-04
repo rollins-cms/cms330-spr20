@@ -5,7 +5,7 @@
 * Requirements due: 
 
 # Rationale: 
-Sprint X will.... 
+Sprint XXX will.... 
 
 # Responsibilities (What you need to know):
 1. 
@@ -36,7 +36,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
   * TODO by Thursday: Have "almost final" answers for all problems in problem set.  Some may still need group discussion or further clarification.
   * Thursday: Do final check of problem set.  Make sure problem set is neat, tidy, and meets guidelines.  Turn in your problem set at the end of class.
   * TODO before next class: Play review game if you haven't alreay. Take the practice quiz and check your answers.  Study as a group.  
-  * Next Tuesday: Quiz (30 minutes), Sprint 1 retrospective, and Sprint 2 planning.
+  * Next Tuesday: Quiz (30 minutes), Sprint XXX retrospective, and Sprint XXX planning.
 
 # Retrospective:
-  * Complete this survey.  Each team member should complete a survey.
+  * Complete this [sprint retrospective survey](https://rollins.co1.qualtrics.com/jfe/form/SV_3rAIzhpHFYbIixf?course=330s20&sprint=XXX).  Each team member should complete a survey.
