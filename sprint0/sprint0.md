@@ -54,7 +54,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
   * TODO by next class:  Get Trello accounts and do Scrum reading. Verify you can log into Github account (or sign up for one if you don't have one for some reason.)  Accept the `project0` link from Github classroom on Canvas. Skim the problem set.  Read OSTEP Ch. 1 and 2 and make notes about anything you found confusing or didn't understand.
   * Thursday class: Make sure everyone's on Trello.  Discuss the definitions of Scrum if there are any questions. Enter deliverables on Trello, categorize them into In-Progress and Backlog, and assign topics based on reading topics you had issues with.  Discuss problem set and begin to write rough draft answers for each question.
   * TODO by next class: Complete the syllabus quiz. Clone repo to Mimir and begin working on project 0.  Refine problem set answers and come prepared with last-minute questions or confusion for your teammates.
-  * Tuesday: Check syllabus quiz & make sure everyone understands. Cleanup and finalize answers for problem set.  Turn in syllabus quiz and problem set at the end of class.  Cleanup `project0` code, comment, and push to github for your final submission before 11:59pm.  Finish 
+  * Tuesday: Check syllabus quiz & make sure everyone understands. Cleanup and finalize answers for problem set.  Turn in syllabus quiz and problem set at the end of class.  Cleanup `project0` code, comment, and push to github for your final submission before 11:59pm.  Complete the sprint retrospective survey (below).
 
 # Retrospective:
   * Complete this [sprint retrospective survey](https://rollins.co1.qualtrics.com/jfe/form/SV_3rAIzhpHFYbIixf?course=cms33020&sprint=0).  Each team member should complete a survey.
