@@ -46,6 +46,25 @@ The `&` causes the next program to immediately start running rather than waiting
 
 **Record your observations about the output displayed in the terminal in your `README` file for `Question 1`.**
 
+**Checkpoint 1:**
+Once you have modified the code and recorded your observations recorded in the readme, push your code to github.  It's good practice to do this frequently to make sure your work is backed up on both Mimir and GitHub.
+
+From your repo directory
+```
+git add .
+git commit -m "checkpoint 1"
+git push origin master
+```
+
+You will need to enter your github ID and password.  You will then see a confirmation message.  If you look at the repo on github.com, you should see your new commit message next to the changed files (`cpu.c` and `README.md`).
+
+**A review of the git commands:**
+1. `git add .` adds all the modified files (in this case `cpu.c` and `README.md` to the "staging area".  This means that they have been changed and you're ready to commit them.
+2. `git commit -m "checkpoint 1"` makes a new commit to `git` with the previously staged files.  The `-m` flag allows you to specify the message that will appear with this commit.  In this case a message of "checkpoint 1" was appropriate, but you'll need to choose other appropriate messages in the future.
+3. `git push origin master` pushes the commit(s) to the remote repo (on github.com).  This command basically syncs up the files you've committed.
+
+
+
 ## Submission
 In this class, code will be submitted via Github.  I grade the last thing you submit.  It is your responsibility to make sure that what you intended to submit to Github was, in fact, submitted.  You can always log-in to github.com and view the code in your repo (which is what I grade).  Make sure to complete the honor code and collaboration statements in the `README` file and do a final push to github.  Verify your submission and you're done!
 
