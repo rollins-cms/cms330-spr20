@@ -38,6 +38,7 @@ The "Requirements" grade is the problem set and `project0` submission.  The scru
    * Read about Scrum.  Link to pdf is on Canvas.
    * Get an account on Trello.com.  Google "Scrum for Trello" and "Burndown for Trello" and install both these extensions.
    * Complete the [syllabus quiz](./syllabus_quiz.md).  You can work on this as a team, but each member must turn in a signed, individual copy.
+   * Complete [project 0](./project0.md) on Mimir using git/Github.
 
 ## Team Requirements:
    * Set up a shared board on Trello with your tasks for Sprint 1.  Add me to your board, too (user id: `valeriesummet`)
