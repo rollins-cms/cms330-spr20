@@ -9,11 +9,11 @@
    * `project0` code pushed to github by 11:59pm on Tuesday, 1/21
 
 # Rationale: 
-Sprint 0 will get you acclimated to the unique way the class will be run.  The first part is ironing out the Scrum process with you.  During this sprint, we will do some background work learning about Scrum (and the online tool Trello) as well as review some basics of working with Mimir and Github.  You will do a very simple problem set and a simple syllabus quiz to make sure we're all on the same page.  All of these requirements are trying to pave the way for the rest of the course: giving us shared tools, shared knowledge base, and shared vocabulary.
+Sprint 0 will get you acclimated to the unique way the class will be run.  The first part is ironing out the Scrum process with you.  During this sprint, we will do some background work learning about Scrum (and the online tool Trello) as well as review some basics of working with Mimir and Github.  You will do a very simple problem set, syllabus quiz, and project to make sure we're all on the same page.  All of these requirements are trying to pave the way for the rest of the course: giving us shared tools, shared knowledge base, and shared vocabulary.
 
-I am having you read from a non-technical book about the value of Scrum, the methodology we will be using in this course.  It is from Scrum: The Art of Doing Twice the Work in Half the Time, written by one of the founders of Scrum. It is about why Scrum works, and it is the book I was reading when I thought of the idea for how to run this course.  I find this reading inspirational, and I'm hoping you will too. 
+I am having you read from a non-technical book about the value of Scrum, the methodology we will be using in this course.  It is from Scrum: The Art of Doing Twice the Work in Half the Time, written by one of the founders of Scrum. It is about why Scrum works, and it contains some crucial motivations for attempting to use a new style of classroom/project management. I find this reading inspirational, and I'm hoping you will too. 
 
-You will also read the first two "chapters" of the textbook.  These provide an overview and a lot of the technical vocabular we'll be using this semster.  Hopefully, these chapters will help you understand and situate future sprints within the overall course.
+You will also read the first two "chapters" of the textbook.  These provide an overview and a lot of the technical vocabular we'll be using this semster.  Hopefully, these chapters will help you understand and situate future sprints within the overall course.  Project 0 is closely linked to chapter 2 in the textbook and allows you to see some interesting concepts that we'll be exploring further later on.
 
 # Responsibilities (What you need to know):
 1. Scrum Processes
@@ -21,7 +21,7 @@ You will also read the first two "chapters" of the textbook.  These provide an o
    * Why do we use Scrum?  How is it related to Agile?  What are the core values of each?
    * Be able to use the Trello software.  
 2. Review Github interaction basics
-   * cloning a repo, pushing to it
+   * cloning a repo, committing and pushing to it
    * good code management practices
 3. Understand introductory operating system concepts
    * virtualization
@@ -29,6 +29,9 @@ You will also read the first two "chapters" of the textbook.  These provide an o
    * threads
    * persistence
    * file system
+4. Review basic C programming
+   * command line arguments
+   * modify, compile, and run a program
   
 # Requirements (What you need to do):
 The "Requirements" grade is the problem set and `project0` submission.  The scrum artifacts will be graded in a "Scrumage" grade.
