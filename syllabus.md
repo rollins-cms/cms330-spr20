@@ -8,7 +8,7 @@
 * Class location: Bush 208
 * Textbooks: We will use a combination of two required textbooks:
      * the open source textbook [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/) (FREE!). If you would like a printed copy of this textbook, you can buy one from Amazon or Lulu for $25-35.  See the webpage for links. 
-* Software: We will be using Mimir as a development platform and GitHub as a software management tool.
+* Software: We will be using Mimir as a development platform and GitHub as a software management tool.  The cost is $25 for the semester.  Use [https://class.mimir.io/courses/da4bc2027c/registrations/new](https://class.mimir.io/courses/da4bc2027c/registrations/new) to sign up for this course.
 
 ## Catalog description:
 Short history of programming languages and their construction. Techniques of language translation including lexical analysis, grammars, and parsers. Analysis of the structure and functionality of modern operating system software, with emphasis on concurrent processes. Topics include: process scheduling, communication, and synchronization; API services; and, design and development of concurrent program using OS features. Prerequisite: CMS 230.
@@ -59,13 +59,13 @@ Letter grades:
 If you or your team disagree with a grade you've received on an assignment, you must let me know within one week of the assignment being returned.  
 
 ## Sprints (tentative and subject to change):
-* Sprint 1: Basic C programming, Github management (review)
-* Sprint 2: Virtualization I - Processor
-* Sprint 3: Scheduling
-* Sprint 4: Virtualization II - Memory
-* Sprint 5: Paging and Swapping
-* Sprint 6: Concurrency and Synchronization
-* Sprint 7: Persistence and File Systems
+* Sprint 0: Basic C programming (review), Github management (review), course overview
+* Sprint 1: Virtualization I - Processor
+* Sprint 2: Scheduling
+* Sprint 3: Virtualization II - Memory
+* Sprint 4: Paging and Swapping
+* Sprint 5: Concurrency and Synchronization
+* Sprint 6: Persistence and File Systems
 
 ## What I Expect of You:
 * Devote a minimum of 8 hours a week outside of class time
