@@ -49,6 +49,8 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
 1. OSTEP Ch. 1 and 2
 2. Scrum reading is posted on Canvas
 3. Scrum videos - lots are available on YouTube and there is one linked from the scrumage page via the syllabus
+4. [git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) (pdf)
+5. [CMS 230 C programming materials](https://github.com/vsummet/cms230notes/blob/master/toc-credits.md) (scroll down past the Assembly part)
 
 # Reality Check:
   * On Tuesday, form teams, do basic introductions.  Work on syllabus quiz.
