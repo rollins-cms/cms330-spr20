@@ -58,6 +58,9 @@ Letter grades:
 
 If you or your team disagree with a grade you've received on an assignment, you must let me know within one week of the assignment being returned.  
 
+## Final Exam
+This course **will** have a final exam on **Thursday April 30, 11am-1pm.**  This time and date is set by the College and is not changeable. Do not make plans to leave campus before the final exam.  Should you miss the exam, you will be required to submit documentation about the emergency circumstances which required you to miss the exam. 
+
 ## Sprints (tentative and subject to change):
 * Sprint 0: Basic C programming (review), Github management (review), course overview
 * Sprint 1: Virtualization I - Processor
