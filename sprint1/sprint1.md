@@ -2,11 +2,11 @@
 
 # Roadmap:
 * Teams:
-* Sprint Duration: Jan. 22 - Feb. 5
-* Quiz date/time: Feb. 5 at the beginning of class
+* Sprint Duration: Thurs Jan. 23 - Thurs Feb. 6
+* Quiz date/time: Feb. 6 at the beginning of class
 * Requirements due:
-   * problem set: Feb. 3 at end of class (12:15pm)
-   * shell project: Feb 5th at 11:59pm
+   * problem set: Feb. 4 at end of class (12:15pm)
+   * shell project: Feb 6th at 11:59pm
 
 # Rationale: 
 Sprint 1 will teach you the basics of several fundamental concepts in operating systems.  We have to be able to talk about how applications get running time on the hardware.  The concept of processes and context switching gets us started, but then we have to talk about how the operating system can schedule multiple applications' processes.  How do we prevent a process from hogging running time on the CPU?  How can we ensure that each process will eventually finish?  How can we fairly distribute fininte resources (and how do we even define "fair")?  These are important questions that we explore when we talk about several different scheduling algorithms.  We also need to introduce the concept of privileged code which does special things and we don't want applications to be able to mess with whenever they feel like it.  As an overview, I recommend you read OSTEP Ch. 3 Dialogue which sets the stage for these concepts.
@@ -56,15 +56,15 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    * Practice quiz
    
 # Reality Check:
-  * On Wednesday (after previous sprint's quiz), do sprint planning meeting (planning poker?) and setup Trello board with topics, deliverables, and time estimates
+  * On Thursday (after previous sprint's quiz), do sprint planning meeting (planning poker?) and setup Trello board with topics, deliverables, and time estimates
   * TODO by next class:  Read OSTEP chapters and skim problem set.  Setup shell project in Mimir using Github.  Read shell project description and note any confusing aspects.
-  * Monday class: Discuss readings.  Update Trello board with problematic topics.  Discuss shell project and make sure everyone understands API calls.  Start problem set together if extra time.
+  * Tuesday class: Discuss readings.  Update Trello board with problematic topics.  Discuss shell project and make sure everyone understands API calls.  Start problem set together if extra time.
   * TODO by next class: Work on shell proect.  Work on problem set focusing on areas you're having trouble with. 
-  * Wednesday: Check problem set thus far & make sure everyone understands. Check/Ask professor for help if you're stuck or file expert request for next class period.  Discuss any problems or confusion on shell project.
-  * TODO by Monday: Have "almost final" answers for all problems in problem set.  Some may still need group discussion or further clarification, but you should be mostly finished.  Make progress on shell project.
-  * Monday: Do final check of problem set.  Make sure problem set is neat, tidy, and meets guidelines.  Turn in your problem set at the end of class.  Discuss shell project blocking points if any.
+  * Thursday: Check problem set thus far & make sure everyone understands. Check/Ask professor for help if you're stuck or file expert request for next class period.  Discuss any problems or confusion on shell project.
+  * TODO by next class: Have "almost final" answers for all problems in problem set.  Some may still need group discussion or further clarification, but you should be mostly finished.  Make progress on shell project.
+  * Tuesday: Do final check of problem set.  Make sure problem set is neat, tidy, and meets guidelines.  Turn in your problem set at the end of class.  Discuss shell project blocking points if any.
   * TODO before next class: Take practice quiz if you haven't already and check your answers.  Study as a group.  Finish shell project.
-  * Wedneday: Make sure you push shell project to Github for final submission (neatly formatted, commented, etc).  Quiz (30 minutes), Sprint 1 retrospective, and Sprint 2 planning.
+  * Thursday: Make sure you push shell project to Github for final submission (neatly formatted, commented, etc).  Quiz (30 minutes), Sprint 1 retrospective, and Sprint 2 planning.
 
 # Retrospective:
   * Complete [sprint retrospective survey](https://rollins.co1.qualtrics.com/jfe/form/SV_3rAIzhpHFYbIixf?course=330s20&sprint=1).  Each team member should complete a survey.
