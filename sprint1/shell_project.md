@@ -50,9 +50,9 @@ shell$ echo "Hello, World!"
 
 ## Exceptions
 There are three commands that should be executed directly by the shell program. These commands do not go through the regular path of calling `fork` and then `execvp`.
-If the user types `exit`, your shell should terminate.
-If the user types `pwd`, you should print the present working directory. You can do this by calling the `getcwd` function ("get current working directory") and printing the string that it returns.
-You must support the `cd` command, which you can implement using the `chdir` function. `chdir` takes a string as its input, then changes the current working directory of the current process to the directory given in the input string.
+* If the user types `exit`, your shell should terminate.
+* If the user types `pwd`, you should print the present working directory. You can do this by calling the `getcwd` function ("get current working directory") and printing the string that it returns.
+* You must support the `cd` command, which you can implement using the `chdir` function. `chdir` takes a string as its input, then changes the current working directory of the current process to the directory given in the input string.
 
 ## Output Redirection
 Your shell must support a special feature. If the user types the `>` symbol followed by a file name, the shell must redirect any output from the command into the specified file. For example:
