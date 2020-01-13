@@ -63,12 +63,12 @@ This course **will** have a final exam on **Thursday April 30, 11am-1pm.**  This
 
 ## Sprints (tentative and subject to change):
 * Sprint 0: Basic C programming (review), Github management (review), course overview
-* Sprint 1: Virtualization I - Processor
-* Sprint 2: Scheduling
-* Sprint 3: Virtualization II - Memory
-* Sprint 4: Paging and Swapping
-* Sprint 5: Concurrency and Synchronization
-* Sprint 6: Persistence and File Systems
+* Sprint 1: Virtualization I - Processor and Scheduling
+* Sprint 2: Virtualization II - Memory
+* Sprint 3: Paging and Swapping
+* Sprint 4: Concurrency and Synchronization
+* Sprint 5: Persistent Storage
+* Sprint 6: File Systems
 
 ## What I Expect of You:
 * Devote a minimum of 8 hours a week outside of class time
