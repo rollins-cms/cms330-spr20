@@ -46,13 +46,10 @@ int main() {
 Run this program **a few** times.  Remember, we're working with non-deterministic programs now, so it's important to not take a single run as the definitive answer.
 
 Then answer the following questions:
+* **Question 1:** When the program runs, does it print the numbers from 0 to 98 in order?
+* **Question 2:** What does the output (from multiple runs of the program) tell you about the relationship between when threads are created and when they actually run?
 
-{Check It!|assessment}(multiple-choice-441908457)
-
-{Submit Answer!|assessment}(free-text-2340746195)
-
-Look at the fourth argument to `pthread_create`. It takes the value of `i` and casts it to the generic pointer typ
-e `void *`. This is okay: it's just a way to move the value of `i` into the `print_thread_id` function while going through the required `void *` type.
+Look at the fourth argument to `pthread_create`. It takes the value of `i` and casts it to the generic pointer type `void *`. This is okay: it's just a way to move the value of `i` into the `print_thread_id` function while going through the required `void *` type.
 
 ## Driving the Point Home
 Modify the thread creation loop in `main` to include another print statement:
@@ -72,11 +69,9 @@ Comment out the loop in `main` which calls `pthread_join`.
 
 Run your code several times and observe the results.
 
-{Check It!|assessment}(fill-in-the-blanks-3808999838)
-
-{Submit Answer!|assessment}(free-text-3886360277)
-
-{Submit Answer!|assessment}(free-text-454006677)
+* **Question 3:** What is the highest thread ID created by the parent?
+* **Question 4:** What is the highest thread ID you see printed from the `print_thread_id` function with the `Hi, I'm thread X!` output?
+* **Question 5:** Based on your answers to the previous two questions, speculate on what happens to threads when the parent process finishes and terminates.
 
 Once you have finished answering the above questions and testing, uncomment the `join` calls because, as we've just proved, those are kind of important. 
 
@@ -97,29 +92,12 @@ In `print_thread_id`, edit a line to be:
 long id = * ((long *) arg);  // In print_thread_id
 ```
 
-{Submit Answer!|assessment}(free-text-2464567431)
-
-{Check It!|assessment}(multiple-choice-156776806)
-
-## Pointers and References
-Change two lines to the statements given below, compile and re-run the program, and see what happens:
-
-In `main`, edit a line to be:
-```
-pthread_create(&threads[i], NULL, print_thread_id, &i);
-// In main
-```
-
-In `print_thread_id`, edit a line to be:
-
-```
-long id = * ((long *) arg);  // In print_thread_id
-```
-
-{Submit Answer!|assessment}(free-text-2464567431)
-
-{Check It!|assessment}(multiple-choice-156776806)
-
+* **Question 5:** Explain how this code is now passing the value of `i` by reference rather than by value. Be sure to note the use of the reference `&` operator and de-reference `*` operator.
+* **Question 6:** Since you are now passing `i` by reference, how would you describe `i` and the address of `i`? Select all that apply.
+   * `i` is now a shared resource among all threads
+   * `i` is a local variable and thus allocated to each thread's individual stack
+   * the address of `i` is a shared resource among all threads
+   * the address of `i` is a local variable which is allocated on each thread's individual stack
 
 ## Locks
 Now write a program `threads2.c` that creates two threads.
@@ -162,7 +140,19 @@ int main() {
     return 0;
 }
 ```
-{Check It!|assessment}(multiple-choice-1971474212)
+
+* **Question 7:** Select all the critical regions in the above program:
+   * `value++;`
+   * `pthread_join(incrementer, NULL);`
+   * `i++;`
+   * `value--;`
+   * `pthread_join(decrementer, NULL);`
 
 ## Code It
-{Check It!|assessment}(code-output-compare-1499113104)
+* **Question 8:** Add code to `threads2.c` which protects the critical region code:
+```
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;  // declare global mutex variable
+
+pthread_mutex_lock(&lock);  // To lock the mutex
+pthread_mutex_unlock(&lock);  // To unlock the mutex
+```
