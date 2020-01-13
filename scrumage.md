@@ -55,9 +55,9 @@ At the beginning of each class time, your team will have a "stand up".  This is 
 * After that, the way you use your time is up to you.  Depending on what is requested of me, I may be lecturing or answering questions or holding a review game.  I will post my schedule on the sprint website as it is determined.  If your team chooses not to participate, you may move to a quiet space if you want.
 
 ## End of Sprint
-At the end of each sprint, there will be a quiz on the responsibilities for the sprint.  Teams get bonus points if everyone on the team either makes an A on the quiz or improves 3 percentage points from the previous quizzes' average.
+At the end of each sprint, there will be a quiz on the responsibilities for the sprint.  T**eams get bonus points** if everyone on the team either makes an A on the quiz or improves 3 percentage points from their previous quiz.
 
-Also at the end of the sprint, you will complete a sprint retrospective as an online survey.  This will give you a chance to look at what you learned and what did or did not go well about the process.  You can change your evaluation of what your strengths and weaknesses are as you develop through the semester. You will be asked to evaluate yourself and your teammates in terms of effort from the sprint.  
+Also at the end of the sprint, you will complete a sprint retrospective as an online survey.  This will give you a chance to look at what you learned and what did or did not go well about the process.  You can change your evaluation of what your strengths and weaknesses are as you develop through the semester. You will be asked to evaluate yourself and your teammates in terms of effort from the sprint.  This is the point when you can change your team or go it alone if you wish -- teams are self-organizing!
 
 # Why?
 There are many reasons for trying this new course management strategy.  The goal is to make the course fun, engaging, and meaningful.  Here are a few reasons I want to try this:
