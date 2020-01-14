@@ -37,6 +37,7 @@ You will also read the first two "chapters" of the textbook.  These provide an o
 The "Requirements" grade is the problem set and `project0` submission.  The scrum artifacts will be graded in a "Scrumage" grade.
 
 ## Individual Requirements:
+   * Complete the [ASSIST survey](https://rollins.co1.qualtrics.com/jfe/form/SV_cVk3y7r4fln1GUB) - You only need to do this once for any Scrumage class you're in (whether Dr. Myers or mine).
    * Understand the concepts on the Responsibilities list.
    * Read about Scrum.  Link to pdf is on Canvas.
    * Get an account on Trello.com.  Google "Scrum for Trello" and "Burndown for Trello" and install both these extensions.
