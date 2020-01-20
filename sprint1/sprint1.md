@@ -46,14 +46,14 @@ The "Requirements" grade is the problem set and shell project. The scrum artifac
 
 ## Team Requirements:
    * Set up a shared Trello board for Sprint 1.  Add team members and me to it (valeriehsummet).
-   * Complete the problem set.
+   * Complete the [problem set](./sprint1_prob_set.pdf).
    
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms330s20&sprint=1) for more resources. 
    * OSTEP: Ch 3 - 8 
    * [Video lecture](https://www.youtube.com/watch?v=exlaEOVRWQM) (~40 min) on FIFO, SJF, SRFT, Round Robin scheduling
    * [Video lecture](https://www.youtube.com/watch?v=_NlmflJQDI4) (~22 min) on MLFQ scheduling
-   * Practice quiz
+   * [Practice quiz](./sprint1_practice_quiz.pdf) and [answers](./sprint1_practice_quiz_ans.pdf)
    
 # Reality Check:
   * On Thursday (after previous sprint's quiz), do sprint planning meeting (planning poker?) and setup Trello board with topics, deliverables, and time estimates
