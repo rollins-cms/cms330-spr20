@@ -57,7 +57,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    
 # Reality Check:
   * On Thursday (after previous sprint's quiz), do sprint planning meeting (planning poker?) and setup Trello board with topics, deliverables, and time estimates
-  * TODO by next class:  Read OSTEP chapters and skim problem set.  Setup shell project in Mimir using Github.  Read shell project description and note any confusing aspects.
+  * TODO by next class:  Read OSTEP chapters and skim problem set.  Setup shell project in Mimir using Github.  Read shell project description and note any confusing aspects. Perhaps run example code in shell project and try to understand what's happening ( perhaps as you read OSTEP Ch. 5: *Process API*)
   * Tuesday class: Discuss readings.  Update Trello board with problematic topics.  Discuss shell project and make sure everyone understands API calls.  Start problem set together if extra time.
   * TODO by next class: Work on shell proect.  Work on problem set focusing on areas you're having trouble with. 
   * Thursday: Check problem set thus far & make sure everyone understands. Check/Ask professor for help if you're stuck or file expert request for next class period.  Discuss any problems or confusion on shell project.
