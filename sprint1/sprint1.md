@@ -46,7 +46,7 @@ The "Requirements" grade is the problem set and shell project. The scrum artifac
 
 ## Team Requirements:
    * Set up a shared Trello board for Sprint 1.  Add team members and me to it (valeriehsummet).
-   * Complete the [problem set](./sprint1_prob_set.pdf).
+   * Complete the problem set: [with space for answers](./sprint1_prob_set.pdf) or [without space (do your own writeup](./sprint1_prob_set-no_space.pdf).
    
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms330s20&sprint=1) for more resources. 
