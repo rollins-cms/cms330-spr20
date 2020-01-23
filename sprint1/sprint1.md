@@ -22,14 +22,14 @@ Sprint 1 will teach you the basics of several fundamental concepts in operating 
 2. Process API in C - OSTEP Ch 5
    * `fork()`, `wait()`, `exec()`
    * Linux utilities for processes: `kill`, `ps`, `man` pages
-3. Limited Direction Execution
+3. Limited Direction Execution - OSTEP Ch 6
    * privileged code
    * system calls (syscalls)
    * user mode vs. kernel mode
    * trapping mechanism - trap, return-from-trap, trap tables
    * cooperative and non-coooperative approaches for context switches
    * interrupts (especially timer interrupts)
-4. Scheduling
+4. Scheduling - OSTEP Ch 7 & 8
    * Concepts: workload, policies
    * Metrics: turnaround time, fairness, response time
    * Alogrithms: FIFO, SJF, STCF, Round Robin, MLFQ
@@ -42,7 +42,7 @@ The "Requirements" grade is the problem set and shell project. The scrum artifac
 
 ## Individual Requirements:
    * Understand the concepts on the *Responsibilities* list.
-   * Complete the shell project in C.  This project is available via the GitHub classroom assignment link on Canvas.
+   * Complete the [shell project](./shell_project.md) in C.  The project repo is available via the GitHub classroom assignment link on Canvas.
 
 ## Team Requirements:
    * Set up a shared Trello board for Sprint 1.  Add team members and me to it (valeriehsummet).
@@ -54,6 +54,9 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    * [Video lecture](https://www.youtube.com/watch?v=exlaEOVRWQM) (~40 min) on FIFO, SJF, SRFT, Round Robin scheduling
    * [Video lecture](https://www.youtube.com/watch?v=_NlmflJQDI4) (~22 min) on MLFQ scheduling
    * [Practice quiz](./sprint1_practice_quiz.pdf) and [answers](./sprint1_practice_quiz_ans.pdf)
+   * Redirection of output to a file (for shell project)
+       * [Video](https://www.youtube.com/watch?v=Eyscu3ByNtg) (YouTube, up to about 4:00) explaining file redirection on Linux.  You do not need to support the `>>` (redirect and append) operator.  Just the redirect operator, `>`, is fine.
+       * [Written Overview](http://linuxcommand.org/lc3_lts0070.php) of file redirection.  Just read the first section (through the end of the "Standard Output" section).  The rest is interesting and useful, but not required for the shell project.
    
 # Reality Check:
   * On Thursday (after previous sprint's quiz), do sprint planning meeting (planning poker?) and setup Trello board with topics, deliverables, and time estimates
