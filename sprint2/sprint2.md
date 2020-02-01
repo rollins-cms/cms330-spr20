@@ -4,7 +4,9 @@
 * Teams
 * Sprint Duration: Feb. 6 - 20
 * Quiz date/time: Th. Feb. 20 at the start of class
-* Requirements due: Tu. Feb. 18th at the end of class
+* Requirements due: 
+   * Problem set: Tu. Feb. 18 at the end of class
+   * Project 1: Th. Feb. 20 by 11:59pm
 
 # Rationale: 
 Sprint 2 introduces us to virtual memory.  Just like we saw in Sprint 1 with the processor, memory is a finite resource that must be shared among many processes.  So how do we make each process think that it has total freedom in its use of memory?  Virtualization! In this sprint, we'll look at two techniques for memory virtualization: 1) base and bounds and 2) segmentation.  In the next sprint, we'll look at some more. 
