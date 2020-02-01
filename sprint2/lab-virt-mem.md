@@ -72,11 +72,15 @@ Programs consist fundamentally of code and data. However, there are several othe
 * uninitialized data - this segment holds static (global) objects that have been declared but not initialized. The space for these objects is constructed at run-time by the kernel and initialized to 0 or NULL.
 * run-time data - this refers to heap space used for dynamic memory allocation. Heap space fluctuates during execution as memory is obtained via `malloc()`, and released via `free()`. Farther away from the programmer, the `brk()` and `sbrk()` system calls facilitate these operations.
 * stack - there is a run-time stack associated with each executing process. It contains stack frames for process context and includes all automatic variables (e.g. function parameters and local variables).
-* shared C libraries - shared libraries loaded during program execution (i.e. dynamically bound code).
 
 The compiler partitions the logical view of your program into these respective regions as it creates the format of the executable. It also places information regarding the sizes of these regions into the program header of your executable. Note that the dynamic regions (stack, heap, uninitialized data) are not actually created until run-time.
 
-These regions each have their own specific locations in virtual memory. As an example, consider Linux memory management. The simplified logical address space of an executing process typically looks like this:
+These regions each have their own specific locations in virtual memory.As an example, consider Linux memory management.
+
+
+
+
+Using our new understanding , simplified virtual (or logical) address space of an executing process typically looks like this:
 
 ```
 A canonical 32-bit address space
@@ -84,12 +88,14 @@ A canonical 32-bit address space
 -----------------------------  Byte index 0
 |           Code            |
 |---------------------------|
-|       static data         |
------------------------------ 
+|           data            | static or global data which is initialized
+|---------------------------|
+|           BSS             | global data which is uninitialized  (BSS is a legacy acronym)
+|---------------------------| 
 |           Heap            |
 |  (dynamically-allocated)  |
 |                           |
------------------------------
+|---------------------------|
 |             |             |
 |             |             | Heap grows and shrinks as data is dynamically allocated
 |             v             | and freed by the program (new and garbage collection in
@@ -99,7 +105,7 @@ A canonical 32-bit address space
 |             ^             | Stack grows and shrinks as the program calls and returns
 |             |             | from functions.
 |             |             |
------------------------------
+|---------------------------|
 |           Stack           |
 |                           |
 |   (local variables and    |
@@ -108,33 +114,27 @@ A canonical 32-bit address space
 -----------------------------  Byte index 2^32 - 1
 ```
 
-The code and data regions are static in size and are created by the operating system at program load time using the information inserted into the program header by the compiler. The dynamic regions are created and managed at run-time in response to function calls, system calls and process resource requests. Memory management hardware and software cooperate to implement the mapping. For example, using a page table, page #2 of the program code might be mapped into frame# 0x400006 of physical memory.
+The code and data regions are static in size and are created by the operating system at program load time using the information inserted into the program header by the compiler. The dynamic regions are created and managed at run-time in response to function calls, system calls and process resource requests. Memory management hardware and software cooperate to implement the mapping. For example, using a page table, page #2 of the program code might be mapped into frame# 0x400006 of physical memory (we'll learn more about this in the next sprint)
 
 ### Memory Mapping Exercise
-Perform the following operations:
+Your task: Create a program called `mem_map.c` which creates variables in such a way that you can determine the location of each segement described above and the direction of growth for the dynamic segments.  You may wish to review our [canonical diagram](https://github.com/vsummet/cms230notes/blob/master/c-programming/c-chap04-memory.md) of an address space which is a good starting point for your diagram.
 
-* create an annotated memory map of GNU/Linux/Intel virtual memory organization
-* include all of the segments described above
-* determine the direction of growth of the dynamic segments
-* specify the approximate location of each of the segments for a sample program you have written
+Once you think you have a program which outputs what you need it to, capture a run of the program and include specific addresses from this run on your diagram.  You can do this using **redirection** as you learned about in the shell project:
+```
+prompt> ./mem_map > output.txt
+
+```
+I want to be able to look at your output side-by-side with your memory diagram and see the relationship between them!
 
 Hints:
-* think about, and create, the type of information each segment stores
+* think about and create the type of information each segment stores
 * it is possible to obtain the logical address of any data object using the "address of" operator (&).
-* Note: the "%p" format modifier can be used to print addresses (in hexadecimal)
-* creating multiple objects will indicate their direction of growth
+* Note: the `%p` format modifier can be used to print addresses (in hexadecimal)
+* creating multiple objects will indicate direction of growth
 * do not compile your program with Electric Fence included; it changes the location of heap variables
+* you do not need to create any complex data structures for this assignment.  Simple integer variables are enough to show what you need to know about the memory.
 
-Alternative mapping options:
-* access system variables that contain pointers to specific memory areas
-* memory mapping information is available from the kernel
-* pause your process and look in /proc/PID#
-* the maps file will provide memory mapping information
-* some utilities (e.g. readelf) interpret binary headers (i.e. they parse an executable)
-* some utilities (e.g. ldd) give information about libraries and executables
-* the pmap command and the valgrind utility can be used to determine process memory usage
+In your README file for this project, answer question 2.  
 
-Synthesize all of this information to help create your annotated diagram.
-
-In addition, run your sample program multiple times. Notice that the dynamic segments appear to "hop around" or re-locate in memory.
-What's going on here, and why? *Hint: google "address obfuscation"*
+## Submission
+Submit your Part I file (`program.c`), your Part II file (`mem_map.c`), your sample run from Part II (`output.txt`), and the completed README to Github.  You have two options for submitting your diagram: 1) draw the diagram digitally and upload it to GitHub or Mimir (and then push to GitHub) 2) draw the diagram on paper and hand it to me (note that this means you have to find me before the deadline to make sure I receive it).
