@@ -1,18 +1,18 @@
-# Lab - Virtual Memory and Memory Management*
+# Project 1 - Virtual Memory and Memory Management*
 `*`Adapted with permission from Dr. Jared Moore and Dr. Greg Wolff, GVSU
 
 ## Overview
-The main purpose of this lab is to investigate the cooperative role played by the compiler and the operating system in the organization of a process' logical address space. It is designed to improve your understanding of memory allocation protocols. A secondary purpose is to introduce a tool for detecting a common memory error -- a memory bound violation.
+The main purpose of this project is to investigate the cooperative role played by the compiler and the operating system in the organization of a process' logical address space. It is designed to improve your understanding of memory allocation protocols. A secondary purpose is to introduce another tool for detecting a common memory error -- a memory bound violation.
 
 ## Activities
-Part I of the lab introduces a tool to help you test your program for memory leaks.  This tool is significantly lighter weight than `valgrind` which we worked with in CMS230.  (But of course, it's much less powerful.)
+Part I of the project introduces a tool to help you test your program for memory leaks.  This tool is significantly lighter weight than `valgrind` which we worked with in CMS230.  (But of course, it's much less powerful.)
 
-The rest of the lab consists of an open-ended investigation into the memory mapping of the current Mimir system environment (the GNU gcc compiler running under Linux on an Intel processor).
+The rest of the project consists of an open-ended investigation into the memory mapping of the current Mimir system environment (the GNU gcc compiler running under Linux on an Intel processor).
 
 ## Getting Started
-Accept the Virtual Memory Lab assignment (link available on Canvas).  Clone the repo to your Mimir workspace.  You will submit all your work for this lab through `git`/GitHub, so look back at `project0` if you need a refresher on how to push your work.
+Accept the assignment link (available on Canvas).  Clone the repo to your Mimir workspace.  You will submit most of your work for this project through `git`/GitHub, so look back at `project0` if you need a refresher on how to push your work.
 
-You will also need to install the program Electric Fence, a memory management tool.:
+You will also need to install the program Electric Fence, a memory management tool:
 ```
 prompt> sudo apt-get install electric-fence
 ```
@@ -63,7 +63,7 @@ Fix the problem.  Two hints for you:
 
 
 ## Part II - Memory Management Overview
-The second part of this lab examines memory management from the system point-of-view. Modern operating systems provide the user with a logical view of memory as an extremely large, contiguous address space. This address space is usually partitioned conceptually into segments: functional partitions of logical memory. The operating system, together with the memory management hardware (known as the Memory Management Unit -- MMU), transparently maps the logical pages of a process into physical memory frames.
+The second part of this project examines memory management from the system point-of-view. Modern operating systems provide the user with a logical view of memory as an extremely large, contiguous address space. This address space is usually partitioned conceptually into segments: functional partitions of logical memory. The operating system, together with the memory management hardware (known as the Memory Management Unit -- MMU), transparently maps the logical pages of a process into physical memory frames.
 
 ### Review (and more detail) on Address Space
 Programs consist fundamentally of code and data. However, there are several other distinct regions of user mode logical memory:
@@ -78,7 +78,7 @@ The compiler partitions the logical view of your program into these respective r
 These regions each have their own specific locations in virtual memory.As an example, consider Linux memory management.
 
 
-
+<!--
 
 Using our new understanding , simplified virtual (or logical) address space of an executing process typically looks like this:
 
@@ -113,7 +113,7 @@ A canonical 32-bit address space
 |                           |
 -----------------------------  Byte index 2^32 - 1
 ```
-
+-->
 The code and data regions are static in size and are created by the operating system at program load time using the information inserted into the program header by the compiler. The dynamic regions are created and managed at run-time in response to function calls, system calls and process resource requests. Memory management hardware and software cooperate to implement the mapping. For example, using a page table, page #2 of the program code might be mapped into frame# 0x400006 of physical memory (we'll learn more about this in the next sprint)
 
 ### Memory Mapping Exercise
