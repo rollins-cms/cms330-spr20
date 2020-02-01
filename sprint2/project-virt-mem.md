@@ -75,8 +75,7 @@ Programs consist fundamentally of code and data. However, there are several othe
 
 The compiler partitions the logical view of your program into these respective regions as it creates the format of the executable. It also places information regarding the sizes of these regions into the program header of your executable. Note that the dynamic regions (stack, heap, uninitialized data) are not actually created until run-time.
 
-These regions each have their own specific locations in virtual memory.As an example, consider Linux memory management.
-
+These regions each have their own specific locations in virtual memory.  As an example, consider Linux memory management. The code and data regions are static in size and are created by the operating system at program load time using the information inserted into the program header by the compiler. The dynamic regions are created and managed at run-time in response to function calls, system calls and process resource requests. Memory management hardware and software cooperate to implement the mapping. For example, using a page table, page #2 of the program code might be mapped into frame# 0x400006 of physical memory (we'll learn more about this in the next sprint
 
 <!--
 
@@ -114,7 +113,6 @@ A canonical 32-bit address space
 -----------------------------  Byte index 2^32 - 1
 ```
 -->
-The code and data regions are static in size and are created by the operating system at program load time using the information inserted into the program header by the compiler. The dynamic regions are created and managed at run-time in response to function calls, system calls and process resource requests. Memory management hardware and software cooperate to implement the mapping. For example, using a page table, page #2 of the program code might be mapped into frame# 0x400006 of physical memory (we'll learn more about this in the next sprint)
 
 ### Memory Mapping Exercise
 Your task: Create a program called `mem_map.c` which creates variables in such a way that you can determine the location of each segement described above and the direction of growth for the dynamic segments.  You may wish to review our [canonical diagram](https://github.com/vsummet/cms230notes/blob/master/c-programming/c-chap04-memory.md) of an address space which is a good starting point for your diagram.
@@ -122,7 +120,6 @@ Your task: Create a program called `mem_map.c` which creates variables in such a
 Once you think you have a program which outputs what you need it to, capture a run of the program and include specific addresses from this run on your diagram.  You can do this using **redirection** as you learned about in the shell project:
 ```
 prompt> ./mem_map > output.txt
-
 ```
 I want to be able to look at your output side-by-side with your memory diagram and see the relationship between them!
 
@@ -134,7 +131,7 @@ Hints:
 * do not compile your program with Electric Fence included; it changes the location of heap variables
 * you do not need to create any complex data structures for this assignment.  Simple integer variables are enough to show what you need to know about the memory.
 
-In your README file for this project, answer question 2.  
+Once you have finished your program and diagram, answer question #2 in your README file for this project.  
 
 ## Submission
 Submit your Part I file (`program.c`), your Part II file (`mem_map.c`), your sample run from Part II (`output.txt`), and the completed README to Github.  You have two options for submitting your diagram: 1) draw the diagram digitally and upload it to GitHub or Mimir (and then push to GitHub) 2) draw the diagram on paper and hand it to me (note that this means you have to find me before the deadline to make sure I receive it).
