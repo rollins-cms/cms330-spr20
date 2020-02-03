@@ -1,5 +1,5 @@
 # Shells
-Due: 
+Due: See deadline on Sprint guide
 
 ## Overview
 In this project, you’ll implement a **shell**, similar to the command line interpreter programs you’ve used in codio and codeanywhere. The shell displays a prompt where the user types commands. After each command is entered, the shell creates a child process to execute the requested program, then prompts for another command once the child process has finished. This project will let you use some of the standard commands for working with processes such as `fork` and `execvp`.
@@ -91,7 +91,7 @@ shell$ sleep 10
 shell$ mkdir temp
 shell$ cd temp
 shell$ pwd
-shell$ ps -u codio > ps.txt
+shell$ ps -u root > ps.txt
 shell$ cat ps.txt
 shell$ cd ..
 shell$ rm -rf temp
