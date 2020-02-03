@@ -36,7 +36,7 @@ Your deliverable grade for this sprint comes from the problem set (50%) and your
 
 ## Team Requirements:
 * track deliverables and estimates using Scrum -- you can use something other than Trello beginning this sprint, but you have to share it with me in some way.  See me to arrange to use something else.
-* Complete the problem set
+* Complete the problem set: [Document with space for answers](./sprint2_prob_set_space.pdf) or [Document without space](./sprint2_prob_set_no_space.pdf)
 
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms330s20&sprint=2) for more resources. 
