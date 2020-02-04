@@ -44,6 +44,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    * OSTEP: Ch 13 (mostly conceptual with big goals of memory virtualization)
    * OSTEP: Ch 15 (base and bounds, skim 15.4 and 15.5)
    * OSTEP: Ch 16 (segmentation -- skim 16.4 and 16.6, omit 16.5)
+   * [Concise summary](http://pages.cs.wisc.edu/~bart/537/lecturenotes/s15.html) of base-and-bounds and segmentation translation techniques.
 
 # Reality Check:
   * On Thursday, do basic technology setup (Trello or other).  Do sprint planning meeting.  
