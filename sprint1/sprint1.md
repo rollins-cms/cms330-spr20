@@ -57,6 +57,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    * Redirection of output to a file (for shell project)
        * [Video](https://www.youtube.com/watch?v=Eyscu3ByNtg) (YouTube, up to about 4:00) explaining file redirection on Linux.  You do not need to support the `>>` (redirect and append) operator.  Just the redirect operator, `>`, is fine.
        * [Written Overview](http://linuxcommand.org/lc3_lts0070.php) of file redirection.  Just read the first section (through the end of the "Standard Output" section).  The rest is interesting and useful, but not required for the shell project.
+    * [Notes for C from CMS230](https://github.com/vsummet/cms230notes/blob/master/toc-credits.md) (scroll down to section on C)
    
 # Reality Check:
   * On Thursday (after previous sprint's quiz), do sprint planning meeting (planning poker?) and setup Trello board with topics, deliverables, and time estimates
