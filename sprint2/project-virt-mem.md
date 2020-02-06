@@ -123,6 +123,9 @@ prompt> ./mem_map > output.txt
 ```
 I want to be able to look at your output side-by-side with your memory diagram and see the relationship between them!
 
+You may want to investigate the Unix utility, `size`.  This program takes an executable as an argument, reads its headers, and reports back about its address space: `size mem_map`.  You will need to do some extra reading about what the `bss` segement is and about how `size` reports the address space, but you may find it useful for organizing your understanding of virtual address spaces.
+
+
 Hints:
 * think about and create the type of information each segment stores
 * it is possible to obtain the logical address of any data object using the "address of" operator (&).
