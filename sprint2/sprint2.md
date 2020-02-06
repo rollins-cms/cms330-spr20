@@ -32,7 +32,7 @@ Your deliverable grade for this sprint comes from the problem set (50%) and your
 
 ## Individual Requirements:
 * Understand the responsiblities on the list.
-* Complete [Project 1](https://github.com/rollins-cms/cms330-spr20/blob/master/sprint2/project-virt-mem.md) on Mimir.
+* Complete the [Memory Project](https://github.com/rollins-cms/cms330-spr20/blob/master/sprint2/project-virt-mem.md) on Mimir.  (Link to accept the assignment on Canvas)
 
 ## Team Requirements:
 * track deliverables and estimates using Scrum -- you can use something other than Trello beginning this sprint, but you have to share it with me in some way.  See me to arrange to use something else.
