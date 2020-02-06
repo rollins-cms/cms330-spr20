@@ -17,14 +17,14 @@ Sprint 2 introduces us to virtual memory.  Just like we saw in Sprint 1 with the
    * Heap
    * Stack
 2. Virtual address translation
-    A. Policies: address translation (conceptually)
-    B. Mechanisms:
-       * Base and bounds (a.k.a dynamic relocation)
-       * Segmentation (generalized base and bounds)
+   - Policies: address translation (conceptually)
+   - Mechanisms:
+      * Base and bounds (a.k.a dynamic relocation)
+      * Segmentation (generalized base and bounds)
 3. Issues and Problems with different memory policies
-   A. framentation
-   B. why base and bounds has problems
-   C. why segementation has problems
+   - framentation
+   - why base and bounds has problems
+   - why segementation has problems
     
 
 # Requirements (What you need to do):
@@ -40,11 +40,13 @@ Your deliverable grade for this sprint comes from the problem set (50%) and your
 
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms330s20&sprint=2) for more resources. 
-   * OSTEP: Ch 12 (quick read to orient yourself)
-   * OSTEP: Ch 13 (mostly conceptual with big goals of memory virtualization)
-   * OSTEP: Ch 15 (base and bounds, skim 15.4 and 15.5)
-   * OSTEP: Ch 16 (segmentation -- skim 16.4 and 16.6, omit 16.5)
-   * [Concise summary](http://pages.cs.wisc.edu/~bart/537/lecturenotes/s15.html) of base-and-bounds and segmentation translation techniques.
+
+* Readings:
+   * [OSTEP: Ch 12](http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-vm.pdf) (quick read to orient yourself)
+   * [OSTEP: Ch 13](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf) (mostly conceptual with big goals of memory virtualization)
+   * [OSTEP: Ch 15](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf) (base and bounds, skim 15.4 and 15.5)
+   * [OSTEP: Ch 16](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf) (segmentation -- skim 16.4 and 16.6, omit 16.5)
+* [Concise summary](http://pages.cs.wisc.edu/~bart/537/lecturenotes/s15.html) of base-and-bounds and segmentation translation techniques.
 
 # Reality Check:
   * On Thursday, do basic technology setup (Trello or other).  Do sprint planning meeting.  
