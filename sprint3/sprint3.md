@@ -51,16 +51,16 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    * Chapter 20 - 20.1 only there is one question pertaining to materials in this section, but it isn't our main focus)
    * Chapter 21 - Swapping (omit 21.6)
    * Chapter 22 - sections 22.3-22.5 only (these detail policies for kicking things out of memory to swap space)
-* Worked example: [paging problem](./worked_example.pdf) and key(./worked_example_ans.pdf) -- A good time to try this is after you think you understand basic paging (Chapter 18 and first video).  It helps you get started with the basics of address translation in a paging-based system.
+* Worked example: [paging problem](./worked_example.pdf) and [key](./worked_example_ans.pdf) -- A good time to try this is after you think you understand basic paging (Chapter 18 and first video).  It helps you get started with the basics of address translation in a paging-based system.
 
    
 # Reality Check:
   * Thursday class: After the Sprint 2 quiz and retrospective, setup your Trello board, appoint a Scrum master, and try to get a handle on the highest priority tasks for the weekend.
-  * TODO by next class: Read and work through textbook readings.  Individually try the paging practice problem and check your answers.
+  * TODO by next class: Read and work through Ch. 18 and 19 readings.  Individually try the  worked paging practice example problem and check your answers.
   * Tuesday: Go over the practice paging problem as a group and start working on the problem set.
-  * TODO by Thursday: Have "almost final" answers for all problems in problem set.  Some may still need group discussion or further clarification.
-  * Thursday: Do final check of problem set.  Make sure problem set is neat, tidy, and meets guidelines.  Turn in your problem set at the end of class.
-  * TODO before next class: Take the practice quiz and check your answers.  Study as a group.  
+  * TODO by Thursday: Read other textbook readings and continue to work on the problem set.  Have "almost final" answers for all problems in problem set.  Some may still need group discussion or further clarification.
+  * Thursday: Finish off almost all of the problem set.
+  * TODO before next class: Finalize problem set.  Take the practice quiz and check your answers.  Study as a group.  
   * Next Tuesday: Quiz (30 minutes), Sprint 3 retrospective, and Sprint 4 planning.
 
 # Retrospective:
