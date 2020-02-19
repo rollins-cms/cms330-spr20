@@ -42,7 +42,7 @@ Your deliverables grade for this sprint is just the problem set.  The Scrumage g
    
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms310s20&sprint=3) for more resources. 
-* [Video with big picture] (https://www.youtube.com/watch?v=c5TD8QyRJcA) of paging (YouTube, 3 min).
+* [Video with big picture](https://www.youtube.com/watch?v=c5TD8QyRJcA) of paging (YouTube, 3 min).
 * [Video showing a big picture](https://www.youtube.com/watch?v=l7HoguhFVQ4) of address translation via paging (5 minutes, YouTube).  In this example, he uses a 32-bit address space (each address composed of 32 bits) and a 4K page size and shows (conceptually) how to go from a program generated virtual address to a physical address.
 * 3 videos on Canvas: Overview of Paging (9 min), Overview of TLB (7 minutes), and Overview of Swapping (15 min)
 * Textbook readings:
