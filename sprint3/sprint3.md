@@ -4,10 +4,10 @@
 * Teams
 * Sprint Duration: Feb. 20 - Mar. 5
 * Quiz date/time: Th. Mar. 5 at the start of class
-* Requirements due: 
+* Requirements due: Problem set due Th. Mar. 5 at the **start** of class.
 
 # Rationale: 
-In Sprint 3, we'll continue our dive into how many processes share the physical memory space.  We already looked at base-and-bounds and segmentation and saw several problems with each.  In this sprint, we'll investigate the scheme that most modern systems use: **paging.**  Along with this, we'll investigate how systems use **swapping** to dynamically allocate memory to currently active processes.  However, we'll see that paging has some problems (it's sloooow), so we'll take a look at a nifty way to speed it up: caching in the **translation lookaside buffer (TLB)**.
+In Sprint 3, we'll continue our dive into how many processes share the physical memory space.  We already looked at base-and-bounds and segmentation and saw several problems with each.  In this sprint, we'll investigate the scheme that most modern systems use: **paging.** However, we'll see that paging has some problems (it's sloooow), so we'll take a look at a nifty way to speed it up: caching in the **translation lookaside buffer (TLB)**.  We'll also see what happens when physical memory is **overcommitted** -- there is too much stuff to fit into physical memory and we have to use a technique **swapping** to dynamically allocate memory to currently active processes.
 
 # Responsibilities (What you need to know):
 1. Paging
