@@ -25,11 +25,11 @@ In Sprint 3, we'll continue our dive into how many processes share the physical 
    * How the TLB can handle context switches
    * Replacement policies
 3.  Swapping
-   * Under what circumstances do we need to use swapping?
-   * What is the swap space?
-   * What happens on a page fault?
-   * Replacement policies - LRU, FIFO, Random
-   * Thrashing and how can we fix it
+    * Under what circumstances do we need to use swapping?
+    * What is the swap space?
+    * What happens on a page fault?
+    * Replacement policies - LRU, FIFO, Random
+    * Thrashing and how can we fix it
 
 # Requirements (What you need to do):
 Your deliverables grade for this sprint is just the problem set.  The Scrumage grade is separate.
