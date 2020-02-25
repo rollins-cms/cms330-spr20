@@ -51,6 +51,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    * an overview of the project
    * an overview of addressing, base-and-bounds, and segmentation
 * [Practice Quiz](./sprint2_practice_quiz.pdf) and [Answer Key](./sprint2_practice_quiz_ans.pdf)
+* [Sprint Quiz](./sprint2_quiz.pdf) and [Answer Key](./sprint2_quiz_ans.pdf)
 
 # Reality Check:
   * On Thursday, do basic technology setup (Trello or other).  Do sprint planning meeting.  
