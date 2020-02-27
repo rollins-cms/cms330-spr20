@@ -1,6 +1,5 @@
 //From OSTEP, Ch 26
 //compile with       gcc -Wall -o main-first -pthread main-first.c
-
 #include <stdio.h>
 #include "mythreads.h"
 #include <stdlib.h>
