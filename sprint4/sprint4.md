@@ -45,7 +45,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
       * Chapter 27 and 29 (omit 29.1) are code chapters particularly relevant to the project.  
       * 31, 32 (omit 32.2)
    * A 30-40 minute [hands-on lab activity](./lab-concurrency.md) which introduces the basics of how to create and manipulate threads.
-   * Dr. Myers's [dramatic work](./deadlock_play.md) about deadlock.
+   * Dr. Myers's [dramatic work](./dining-philosophers-play.pdf) about deadlock.
    * Videos on Canvas: overview of threads, working with `pthread` functions in C
    
 # Reality Check:
