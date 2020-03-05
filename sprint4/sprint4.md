@@ -4,7 +4,7 @@
 * Teams
 * Sprint Duration: Mar. 5 - Mar. 22 (3 week sprint!)
 * Quiz date/time: Mar. 22 at the start of class
-* Requirements due: 
+* Requirements due: Problem set due at the start of class Mar. 22, Project due (push to github) by 11:59pm on Mar. 22
 
 # Rationale: 
 Sprint 4 will introduce to another fundamental concept in modern operating systems: concurrency.  Concurrency means a program with multiple threads. Think of this like having minions: you can direct many small minions to run around and do your bidding.  In this sprint, you'll work with a new programming concept (threads) and hopefully get them to do your bidding by the end of the sprint.  You'll have to learn how to protect and synchronize access to resources that threads need to share. We'll also see classic concurrency and synchronization problems like deadlock and race conditions. 
@@ -41,26 +41,17 @@ Your deliverables for this sprint are the problem set (as a group) and the progr
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms330s20&sprint=4) for more resources. 
    * OSTEP:
-      * 26, 28 (only up to 28.8), (these contain the theoretical background of threads)  
-      * Chapter 27 and 29 (omit 29.1) are code chapters particularly relevant to the project.  
-      * 31, 32 (omit 32.2)
+      * 26, 28 (only up to 28.8) -- these contain the theoretical background of threads
+      * Chapter 27 and 29 (omit 29.1) -- code chapters particularly relevant to the project.  
+      * 30.1 and 30.2 -- producer/consumer or bounded buffer problem for problem set question
+      * 31.1-31.4, 32 (omit 32.2) -- semaphores and concurrency bugs
    * A 30-40 minute [hands-on lab activity](./lab-concurrency.md) which introduces the basics of how to create and manipulate threads.
    * Dr. Myers's [dramatic work](./dining-philosophers-play.pdf) about deadlock.
-   * Videos on Canvas: overview of threads, working with `pthread` functions in C
+   * Videos on Canvas:
+      * overview of threads (13 min)
+      * working with `pthread` functions in C (14 min)
+      * locks (13 min)
+      * working with `pthread` mutexes (locks) in C (7 min)
    
-# Reality Check:
-  * On Thursday, do basic team setup.  Do sprint planning meeting and setup Trello board.
-  * TODO by next class:  Skim chapter 27.  Do hands-on lab activity.  Setup project code.  
-  * Thursday class: 
-  * TODO by next class: enjoy Spring Break!
-  * Tuesday: 
-  * TODO by Thursday: 
-  * Thursday:
-  * TODO by Tuesday:
-  * Tuesday:
-  * TODO by Thursday: Take the practice quiz and check your answers.  Study as a group.  
-  * Next Tuesday: Quiz (30 minutes), Sprint 4 retrospective, and Sprint 5 planning.
-  
-
 # Retrospective:
   * Complete this [sprint retrospective survey](https://rollins.co1.qualtrics.com/jfe/form/SV_3rAIzhpHFYbIixf?course=330s20&sprint=4).  Each team member should complete a survey.
