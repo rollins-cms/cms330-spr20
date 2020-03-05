@@ -32,7 +32,7 @@ Your deliverables for this sprint are the problem set (as a group) and the progr
 
 ## Individual Requirements:
    * Participate in your team.
-   * Complete the programming project
+   * Complete the [programming project](./project.md)
 
 ## Team Requirements:
    * Maintain the Trello board and track your deliverables
