@@ -9,7 +9,7 @@ As always, remember:
 * Include a `Makefile` which builds all your code from source
 
 ## Getting Started
-Accept the GitHub assignment via the link on Canvas for the "Sprint 4 project" assignment.  Clone your repo to Mimir.  You may find it easier to complete the short lab activity (should take 30-45 minutes) to gain an overview of using the `pthread` library and what each function call does before you begin this project.
+Accept the GitHub assignment via the link on Canvas for the "Sprint 4 project" assignment.  Clone your repo to Mimir.  You may find it easier to complete the short lab activity (should take 30-45 minutes) first before starting this assignment, but it isn't required.  The lab will help you gain an overview of using the `pthread` library and what each function call does before you begin this project.
 
 ## Problem 1
 The first problem creates multiple threads and has them increment elements of a shared global array in a loop. You need to add code to create the threads, declare and initialize a lock, protect the critical region, and make the parent wait until the threads have finished before exiting. Test the program for 2, 10, and 100 threads; your solution should work perfectly in each case.
