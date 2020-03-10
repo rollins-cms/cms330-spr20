@@ -2,9 +2,9 @@
 
 # Roadmap:
 * Teams
-* Sprint Duration: Mar. 5 - Mar. 26 (3 week sprint!)
-* Quiz date/time: Mar. 26 at the start of class
-* Requirements due: Problem set due at the start of class Mar. 26, Project due (push to github) by 11:59pm on Mar. 26
+* Sprint Duration: Mar. 5 - Apr. 2 (3 week sprint, not including Spring Break!)
+* Quiz date/time: Apr. 2 at the start of class
+* Requirements due: Problem set due at the start of class Apr. 2, Project due (push to github) by 11:59pm on Apr. 2
 
 # Rationale: 
 Sprint 4 will introduce to another fundamental concept in modern operating systems: concurrency.  Concurrency means a program with multiple threads. Think of this like having minions: you can direct many small minions to run around and do your bidding.  In this sprint, you'll work with a new programming concept (threads) and hopefully get them to do your bidding by the end of the sprint.  You'll have to learn how to protect and synchronize access to resources that threads need to share. We'll also see classic concurrency and synchronization problems like deadlock and race conditions. 
