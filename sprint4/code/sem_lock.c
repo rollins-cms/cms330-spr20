@@ -1,3 +1,7 @@
+// Example starter code from video showing how to use a semaphore like a lock/mutex.  
+// The video shows how to declare semaphores, 
+// initialize them, and then use sem_wait and sem_post to protect critical regions
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -32,7 +36,7 @@ int main(int argc, char *argv[]) {
     printf("main: begin [balance = %d] [%p]\n", balance, &balance);
 
     // Declare and start threads
-   	pthread_t p1, p2;
+    pthread_t p1, p2;
     pthread_create(&p1, NULL, mythread, NULL); 
     pthread_create(&p2, NULL, mythread, NULL);
     
