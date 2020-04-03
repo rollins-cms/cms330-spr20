@@ -26,7 +26,7 @@ In Sprint 5 we'll cover file systems which demonstrate a fundamental property of
    
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms310s20&sprint=5) for more resources. 
-   * 
+   * OSTEP: Ch 39, 40
 
 
 # Retrospective:
