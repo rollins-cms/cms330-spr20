@@ -34,9 +34,46 @@ There will be a lot of output.  Turns out that even (seemingly) simple commands 
 **File descriptors** are an abstract "handle" that allows us to access a file in some way.  Think of a file descriptor as a pointer to a file.  The file descriptor can be used as input to some syscalls or can be the result of a syscall.  The numbers you see in the `strace` output are file descriptors for various input and output streams.  
 
 ## `lseek`
-Now open the file `lseek_demo.c`.  `lseek` is a function which can be used to move through files manually, and this program demonstrates its use.
 
-The OS maintains an **offset** for each open file.  Reading or writing to a file changes the offset value by the amount read or written.  A read or write starts from the current offset in the file.  We can explicitly maneuver through a file by specifying an offset to start from, and we can use `lseek` to do this.
+Copy/paste the following program into a file named `lseek_demo.c`.
+
+```
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <assert.h>
+
+int main(int argc, char *argv[]) {
+    char buffer[10];
+    int i;
+    int iterations = 1;
+    
+    int fd = open("file.txt", O_RDONLY);
+    assert(fd >= 0);
+
+    for(i = 0; i < iterations; i++) {
+        //vary last parameter between SEEK_SET, SEEK_CUR, and 
+        //SEEK_END to see different behaviors
+        int rc = lseek(fd, 10, SEEK_END);
+        printf("offset %d\n", rc);
+    
+        //read 10 bytes & display them
+        read(fd, buffer, sizeof(buffer));
+        printf("contents: %s\n", buffer);
+    }
+    
+    return 0;
+}
+
+
+```
+
+`lseek` is a function which can be used to move through files manually, and this program demonstrates its use.
+
+The OS maintains an **offset** for each open file.  Reading or writing to a file changes the offset value by the amount read or written.  A read or write starts from the current offset in the file.  We can explicitly maneuver through a file by specifying an offset to start from, and we can use `lseek` to do this.  Remember that a file can be thought of as a linear array of bytes; the offset can be thought of as an index into this (conceptual) array of bytes.
 
 `lseek` takes three parameters: 
 1. the first is a file descriptor
@@ -46,7 +83,7 @@ The OS maintains an **offset** for each open file.  Reading or writing to a file
   b. if set to the constant `SEEK_CUR`, the offset begins at the current offset
   c. if set to the constant `SEEK_END`, the offset begins at the end of the file.
   
-The `lseek_demo.c` program manually advances the offset by 10 bytes and then reads 10 bytes and prints them to standard output.  Remember that the read operation  will also advance the offset by another 10 bytes.  Currently the program does this 4 times, but you can vary that if you want to.
+The `lseek_demo.c` program manually advances the offset by 10 bytes and then reads 10 bytes and prints them to standard output.  Remember that the read operation will also advance the offset by another 10 bytes.  Currently the program does this 4 times, but you can vary that if you want to.
 
 Compile the program and run it.  Then change the last parameter of the `lseek` function call to the other two values, recompile, and rerun.  You should be able to explain the output from each of the three runs, combining your knowledge of `lseek` and your knowledge of buffer overflows in C.
 
