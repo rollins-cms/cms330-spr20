@@ -88,9 +88,9 @@ Compile the code and make sure you don't have any typos: `gcc -Wall -Werror -o s
 Now let's take a deep dive and see what we actually did.  In the code :
 
 1. The call to the function `socket()` creates an **unnamed** socket inside the kernel and returns an integer known as socket descriptor.  This is basically a file descriptor and can be used the same way.
-  * This function takes the family as its first argument. For the Internet family of IPv4 addresses, we use the constant `AF_INET`.
-  * The second argument `SOCK_STREAM` specifies that the transport layer protocol that we want should be reliable (ie it should have acknowledgment techniques), 2-way communication. For example: TCP
-  * The third argument is generally set to zero to let the kernel decide the default protocol to use for this connection. For connection-oriented reliable connections, the kernel will choose TCP as the default protocol.
+   * This function takes the family as its first argument. For the Internet family of IPv4 addresses, we use the constant `AF_INET`.
+   * The second argument `SOCK_STREAM` specifies that the transport layer protocol that we want should be reliable (ie it should have acknowledgment techniques), 2-way communication. For example: TCP
+   * The third argument is generally set to zero to let the kernel decide the default protocol to use for this connection. For connection-oriented reliable connections, the kernel will choose TCP as the default protocol.
   
 2. You'll see the function `memset` used a lot throughout both the server and the client.  This function takes 3 arguments: an address in memory, a value to fill memory with, and a length (number of bytes).  It will fill in the specified number of bytes with the specified value starting at the specified address.  Think of it as a way of cleaning out memory before using it.  When buffers get reused repeatedly (as they do for sending and receiving repeatedly in socket programming), it's considered good practice to start with a "clean slate".
 
