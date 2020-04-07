@@ -37,12 +37,13 @@ In Sprint 5 we'll cover file systems which demonstrate a fundamental property of
    * sockets 
 
 # Requirements (What you need to do):
-1.  Work with your team to understand the sprint requirements and 
+1.  Work with your team to understand the sprint requirements and maintain your Trello board
 
 ## Individual Requirements:
    * Particpate in your team and undertand all the concepts on the responsibilities list. 
 
 ## Team Requirements:
+   * Maintain a Trello board to track your sprint
    * Complete the [File Systems Lab](./fs_lab.md) and prepare answers to the questions in it. (30 pts)
    * Complete the [Networking Lab](./networking_lab.md) and prepare answers to the questions in it. (30 pts)
    * Complete the [Problem Set](./problem_set.pdf)  (40 pts)
