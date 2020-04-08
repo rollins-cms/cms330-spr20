@@ -1,11 +1,20 @@
 # Basic Socket Programming
 
+
+## Beginning of Lab Questions
+1. Do a bit of internet research (a.k.a Googling) or peruse the excellent [Beej's Guide to Network Programming](http://beej.us/guide/bgnet/html/) and briefly define/describe the following terms in the context of networking:
+   * bind
+   * port
+   * (3 way) handshake
+   * TCP
+   * IPv4 and IPv6
+
 ## Introduction
 Let's learn a bit more about C socket programming by starting with a really basic setup: one client connecting to one server.  A very basic client will send a string to the server and the server will echo back the same string with a time stamp added to it.
 
 Take a look at the flow chart we used to discuss client-server interactions via sockets:
 
-![client-server architecture](.guides/img/socket_client_server.png)
+![client-server architecture](./socket_client_server.png)
 
 In this lab, you'll be using all of these function calls.  Let's get started with the server.
 
@@ -193,15 +202,15 @@ $ ./client 127.0.0.1
 ```
 The client will pause after prompting you for a request.  Type anything you want and press enter.
 
-You should see a response with the original request string plus the current date/time, similar to `Mon Apr 22 17:40:43 2019`.  *Huh?* you might be thinking. *That's not the time right now...*. Or you might just be thinking, *I can't wait for this class to end*.  I can never be sure. Remember that the platform we're using (Codio) is hosted elsewhere.  Their machines are in a different time zone!  
+You should see a response with the original request string plus the current date/time, similar to `Mon Apr 2 17:40:43 2020`.  *Huh?* you might be thinking. *That's not the time right now...*. Or you might just be thinking, *I can't wait to finish this lab*.  (As a professor, I can never be sure what you're thinking.) Remember that the platform we're using (Mimir) is hosted elsewhere.  Their machines are in a different time zone!  
 
 No matter what you're thinking, we successfully gotten a response to the client request from the server!
 
-We needed to specify the IP address of the server as a command line argument when we started up the client.  Since we are running both the server and the client on the same (local) machine for testing purpose, we used the **loop back** IP address.  The loop back address is an easy way to tell our code that the server is right here, and we don't need to access the Internet to find it.  *Side note: this is similar to horror movies when the crucial phone call comes from inside the house and everyone realizes that both the victim(s) and murderer(s) are in the same location!*
+We needed to specify the IP address of the server as a command line argument when we started up the client.  Since we are running both the server and the client on the same (local) machine for testing purpose, we used the **loop back** IP address.  The loop back address is an easy way to tell our code that the server is right here, and we don't need to access the Internet to find it.  *This is similar to horror movies when the crucial phone call comes from inside the house and everyone realizes that both the victim(s) and murderer(s) are in the same location!*
 
 Useless trivia: 127.0.0.1 is a reserved IP address that always indicates the local machine.  For this reason, is also referred to as "home" and leads to things such as t-shirts which just reinforce the idea that computer scientists are elitist snobs:
 
-![](https://i2.wp.com/www.supergraphictees.com/wp-content/uploads/there-is-no-place-like-home-navy-blue.jpg?fit=932%2C1100&ssl=1)
+<img src="https://i2.wp.com/www.supergraphictees.com/wp-content/uploads/there-is-no-place-like-home-navy-blue.jpg?fit=932%2C1100&ssl=1" width="400">
 
 ## The Ultimate Answer to Life and Everything
 Ok, this is (somewhat) cool.  We have a server which can accept client requests and respond with a date/time.  But a date/time isn't really that interesting.  Let's kick it up a notch and make a [Magic 8-Ball](https://en.wikipedia.org/wiki/Magic_8-Ball) server.  When a client asks a question, the server will respond with one of twenty canned responses.
@@ -267,11 +276,13 @@ void getFortune(char buff[]) {
 Now change the server's response to be a random Magic 8-ball reply instead of just the date/time.
 
 1. Comment out the region in `main` which gets the time/date and formats it as a string.
-2. Comment out the region which uses `strcat` and `strcpy` to concatenate the original request with the time/date.
+2. Comment out the 3 lines in main which use `strcat` and `strcpy` to concatenate the original request with the time/date.
 3. Add a call to the function:
 ```
 getFortune(response);
 ```
+This will write the random fortune into the buffer `response`.
+
 
 Also, let's change our client code to make it more evident what the user should do.  Replace the generic "Request: " prompt with:
 ```
@@ -282,7 +293,7 @@ Also, let's change our client code to make it more evident what the user should 
 
 Recompile your server and client, run the server, run the client, and try out a question on the client.
 
-Awesome!  But we can only ask one question!  And we have to restart the server each time!  Turns out, we have a lot of questions at this point in the semester.  Seems like we should be able to ask the Magic 8-Ball many questions.  
+Awesome!  But you might notice that you can only ask one question and then you have to restart the server.  This won't do!  Turns out, we have a lot of questions at this point in the semester.  Seems like we should be able to ask the Magic 8-Ball many questions.  
 
 ## All the Answers!
 Let's add an infinite loop so that we can ask multiple questions.  
@@ -310,7 +321,7 @@ Recompile the client, start the server, start the client, and ask as many questi
 
 ```
 Ask the magical, mysterious 8-ball a question, o' puny human:
-Q: Will I pass my CMS33 final?
+Q: Will I pass my CMS330 quiz?
 A: Cannot predict now.
 
 Ask the magical, mysterious 8-ball a question, o' puny human:
@@ -339,6 +350,12 @@ if (send_fd < 0) {
 ```
 
 Checking for errors is extremely important in network programming when a multitude of things (many of them outside your control!) can go wrong.
+
+## End of Lab Questions
+2. There are two main classes of servers, iterative and concurrent. An iterative server iterates through each client, handling it one at a time. In our basic model, the server handles only one client at a time.  This is a big assumption.  Given what you now know about threads and processes, how could you modify your server to support multiple clients?
+3. Research, briefly summarize, and contrast a client-server architecture (such as we've explored in this lab) and a peer-to-peer network.
+4. In client-server architectures, we sometimes distinguish between *thin* and *thick* clients.  Research and summarize the differences and give an example of each.
+
 
 
 
