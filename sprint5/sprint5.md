@@ -54,6 +54,11 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
    * Videos on Canvas:
      * Overview of file systems (13 min)
      * File descriptors in-depth (12 min)
+     * Very Simple File Systems - Part 1 (11 min)
+     * VSFS - Part 2 (10 min)
+     * VSFS - Part 3 (API calls for read & create)  (16 min)
+     * VSFS - Part 4 (API calls for write & delete)
+     
 
 
 # Retrospective:
