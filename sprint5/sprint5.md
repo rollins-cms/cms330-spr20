@@ -50,14 +50,20 @@ In Sprint 5 we'll cover file systems which demonstrate a fundamental property of
    
 # Resources:  
 I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms310s20&sprint=5) for more resources. 
-   * OSTEP: Ch 39, 40
+   * OSTEP: Ch 39, 40 (omit 40.7)
    * Videos on Canvas:
      * Overview of file systems (13 min)
      * File descriptors in-depth (12 min)
      * Very Simple File Systems - Part 1 (11 min)
      * VSFS - Part 2 (10 min)
      * VSFS - Part 3 (API calls for read & create)  (16 min)
-     * VSFS - Part 4 (API calls for write & delete)
+     * VSFS - Part 4 (API calls for write & close)
+     * VSFS - Part 5 (Dealing with large files)
+     * Overview of networking
+     * Protocols
+     * Routers and DNS
+     * WWW
+     * Sockets and interprocess communication
      
 
 
