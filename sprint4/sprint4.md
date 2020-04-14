@@ -55,5 +55,6 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
       * Deadlock Parts 1 & 2
       * Dining Philosophers overview
    * [Practice quiz](./practice_quiz.pdf) and [Answer Key](./practice_quiz_ans.pdf)
+   * [Sprint 4 quiz](./sprint4_quiz.pdf) and [Answer Key](./sprint4_quiz_ans.pdf)
 # Retrospective:
   * Complete this [sprint retrospective survey](https://rollins.co1.qualtrics.com/jfe/form/SV_3rAIzhpHFYbIixf?course=cms330s20&sprint=4).  Each team member should complete a survey.
