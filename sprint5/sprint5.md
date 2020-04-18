@@ -49,7 +49,7 @@ In Sprint 5 we'll cover file systems which demonstrate a fundamental property of
    * Complete the [Problem Set](./problem_set.pdf)  (40 pts)
    
 # Resources:  
-I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms310s20&sprint=5) for more resources. 
+I may add to these as we go through the sprint.  Use the [Expert Request](https://rollins.co1.qualtrics.com/jfe/form/SV_0jNfbBpN1clDJfn?course=cms330s20&sprint=5) for more resources. 
    * OSTEP: Ch 39, 40 (omit 40.7)
    * Videos on Canvas:
      * Overview of file systems (13 min)
@@ -64,6 +64,7 @@ I may add to these as we go through the sprint.  Use the [Expert Request](https:
      * Routers and DNS
      * WWW
      * Sockets and interprocess communication
+   * [Practice quiz](./practice_quiz.pdf) and [answer key](./practice_quiz_ans.pdf)
      
 
 
