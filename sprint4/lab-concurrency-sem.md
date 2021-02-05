@@ -109,8 +109,8 @@ Compile and re-run the program several times; observe what happens:
    * the address of `i` is a shared resource among all threads
    * the address of `i` is a local variable which is allocated on each thread's individual stack
 
-## Locks
-Now let's work on another program and see how to use locks to protect shared data/resources.
+## Semaphores
+Now let's work on another program and see how to use a semaphore as a lock (two states: locked and unlocked) to protect shared data/resources.
 
 Open a program named `threads2.c` and enter the code below.
 
@@ -164,7 +164,7 @@ Compile and run the program several times.  Make sure you understand what is hap
 ```
 #include <semaphore.h>  //include C's semaphore library
 sem_t mutex;  // declare global mutex variable which all threads can use
-sem_init(&mutex, 0, 1); //initialize the semaphore mutex to be shared between threads (that's the 0 for the second argument) with a value of 1 (last argument).  
+sem_init(&mutex, 0, 1); //initialize the semaphore mutex to be shared between threads (that's the 0 for the second argument) with an initial value of 1 (last argument).  
 sem_wait(&mutex); // Same as P(mutex)
 sem_post(&mutex); // Same as V(mutex)
 sem_destroy(&mutex); //cleans up and frees memory associated with semaphore
