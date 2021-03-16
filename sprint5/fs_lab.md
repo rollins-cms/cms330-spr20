@@ -7,9 +7,9 @@ Begin by creating two files which you'll use as input in subsequent steps:
 1. Create a file named `foo.txt` using Mimir's built-in editor.  Put something simple in this file like just the line "hello".
 2. Create a file full of numbers:
 ```
-prompt$ for x in $(seq 1 1 20000); do echo $x >> data.txt; done
+prompt$ for x in $(seq 1 1 40000); do echo $x >> data.txt; done
 ```
-This is a simple bash script which outputs the numbers from 1 to 20000 by 1's.  We then redirect this sequence of numbers into a file named `data.txt`.  You can take a look at the contents of file with `more data.txt`.  Use `[space]` to scroll through pages and `q` to exit `more`.
+This is a simple bash script which outputs the numbers from 1 to 40000 by 1's.  We then redirect this sequence of numbers into a file named `data.txt`.  You can take a look at the contents of file with `more data.txt`.  Use `[space]` to scroll through pages and `q` to exit `more`.
 
 Next, we'll need to install a package with special utilities we'll use in this lab:
 ```
