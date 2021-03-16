@@ -93,7 +93,7 @@ The `lseek_demo.c` program manually advances the offset by 10 bytes and then rea
 
 Compile the program and run it.  Then change the last parameter of the `lseek` function call to the other two values, recompile, and rerun.  
 
-**Question 3: ** Explain the output from each of the three runs, combining your knowledge of `lseek`, the program output, and your knowledge of buffer overflows in C.
+**Question 3:** Explain the output from each of the three runs, combining your knowledge of `lseek`, the program output, and your knowledge of buffer overflows in C.
 
 **Question 4:** Why do you think SEEK_END would be useful?
 
@@ -108,6 +108,7 @@ Since `data.txt` is a large(ish) file containing one integer value per line, the
 
 
 **Question 5:** How big (in bytes of kilobytes) is the buffer on this version of Linux and hardware?
+
 **Question 6:** Remember, that you can also see the number of bytes in a file using the long listing command: `ls -l data.txt`.  Are all of these bytes read/written when you run the `strace` command?  How do you know?
 
 ## Tracing Linux Commands
