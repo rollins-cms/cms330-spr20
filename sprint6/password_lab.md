@@ -85,8 +85,9 @@ prompt$ openssl passwd -1 "raspberry" > shadow_test
 
 You can run `john shadow_test` again and let it run for a minute or so, but it won't crack the password. `raspberry` is too unusual for the default cracking approach. 
 
-**Question X**: Press the spacebar 3-5 times as `john` runs to get a status update on what it's currently trying.  Copy/Paste your output to your report.
-**Question X**: As stated earlier, the `-1` flag uses the MD5 hashing algorithm.  Use Google to determine the security of this algorithm. (Include your sources).
+**Question 1**: Press the spacebar 3-5 times as `john` runs to get a status update on what it's currently trying.  Copy/Paste your output to your report.
+
+**Question 2**: As stated earlier, the `-1` flag uses the MD5 hashing algorithm.  Use Google to determine the security of this algorithm. (Include your sources).
 
 Press `Ctl-C` to exit `john`.
 
@@ -104,7 +105,7 @@ prompt$ john --wordlist=/usr/share/dict/american-english-large shadow_test
 
 It will take about 20 seconds, but `john` will eventually work its way through the list to find `raspberry` and crack the password. 
 
-**Question X**: As before, press the spacebar 3-5 times for updates as it cracks and copy/paste the output to your report
+**Question 3**: As before, press the spacebar 3-5 times for updates as it cracks and copy/paste the output to your report
 
 How about one more?  Many people simply add numbers to the end of a word to meet password requirements.
 
@@ -120,8 +121,9 @@ prompt$ date;john --wordlist=/usr/share/dict/american-english-large --rules shad
 
 This approach is extremely effective. People are not very creative, on average, so a good list of words and a set of common mangling patterns is enough to crack a large fraction of the hashes in a typical password database.
 
-**Question X:** Press space a few times while the program runs.  What sort of mangling rules do you see *john* trying?  Copy and paste output which helps you identify at least 3 suspected mangling rules.
-**Question X:** The `date` command causes Linux to print the system date and time in a format like: `Wed Feb 21 14:51:02 UTC 2020`.  By putting `date;` before and after the `john` command, Linux will print the system time, run `john` and then print the system time again when `john` finishes.  How much time did it take `john` to crack the password?
+**Question 4:** Press space a few times while the program runs.  What sort of mangling rules do you see *john* trying?  Copy and paste output which helps you identify at least 3 suspected mangling rules.
+
+**Question 5:** The `date` command causes Linux to print the system date and time in a format like: `Wed Feb 21 14:51:02 UTC 2020`.  By putting `date;` before and after the `john` command, Linux will print the system time, run `john` and then print the system time again when `john` finishes.  How much time did it take `john` to crack the password?
 
 How to create good passwords? Basically, a combination of length and unusualness.
 
