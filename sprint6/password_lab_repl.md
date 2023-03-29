@@ -27,25 +27,15 @@ When a user logs in, the system can calculate the hash of the user password and 
 
 Note that for this to be secure, it must be **impossible** to recover the real password given only the hash in the shadow file. Strong cryptographic hash functions have this property. In practice, however, weak passwords may still be easy to crack.
 
-By default, Mimir logs with you with `root` (administrator) privileges.  So it's useful to create another account so we can examine how that password is stored.  Add a user account with the name `student`:
-
-```
-prompt$ useradd student
-```
-
-Then set the password to that account:
-
-```
-prompt$ passwd student
-```
-
-The system will prompt you to type the password twice.  Note that you **will not** see any visibile indication as you type the password.  In this example, I set the password to `raspberry`.
-
-Dump the contents of `/etc/shadow/` to the screen using the `cat` command.  As you might expect, the `shadow` file contains sensitive information, so it's not accessible to regular users. You have to use root-level priviliges to interact with it.
+Try to dump the contents of `/etc/shadow/` to the screen using the `cat` command.  
 
 ```
 prompt$ cat /etc/shadow
 ```
+
+As you might expect, the `shadow` file contains sensitive information, so it's not accessible to regular users. You have to use root-level priviliges to interact with it.
+
+XXX place sample file here for exploration
 
 Look for a line that begins with `student:$6$zpU...`. This is shadow password file entry for user `student`, the user account we just created.
 
@@ -58,17 +48,9 @@ The leading `$6$` at the beginning of the hash string is called the **salt**. Th
 
 A password cracker takes a shadow password file as input and reverse-engineers the real passwords that correspond to the hashes it contains.  It hashes candidate (potential) passwords and then compares the generated hash against the hash in the shadow file.  If the hashes match, the password has been found.  *Sidenote: this is why it's very important that hashing algorithms used in cryptography generate very few **collisions** - different character sequences which have the same hash.*
 
-Install John the Ripper:
+Now let's make an example shadow password file:
 
 ```
-prompt$ sudo apt-get install john
-```
-
-Now make an example shadow password file:
-
-```
-prompt$ mkdir security_lab
-prompt$ cd security_lab
 prompt$ openssl passwd -1 "password" > shadow_test
 ```
 
@@ -98,19 +80,15 @@ prompt$ openssl passwd -1 "raspberry" > shadow_test
 
 You can run `john shadow_test` again and let it run for a minute or so, but it won't crack the password. `raspberry` is too unusual for the default cracking approach. 
 
-**Question 1**: Press the spacebar 3-5 times as `john` runs to get a status update on what it's currently trying.  Copy/Paste your output to your report.
+**Question 1**: Press the spacebar 3-5 times as `john` runs to get a status update on what it's currently trying (look at the end of the line).  Copy/Paste your output to your report.
 
 **Question 2**: As stated earlier, the `-1` flag uses the MD5 hashing algorithm.  Use Google to determine the security of this algorithm. (Include your sources).  Would you choose to use the MD5 algorithm as a systems administrator?
 
-Press `Ctl-C` to exit `john`.
+Press `Ctl-C` to exit `john` if it has not already finished.
 
 ## Part 2: Dictionary Attacks
 
-Can we do better? Yes, we can, with a **dictionary** attack.  In dictionary attacks, we try each word/sequence in a very large list of potential passwords. Download a large list of words (the American English dictionary):
-
-```
-prompt$ sudo apt-get install wamerican-large
-```
+Can we do better? Yes, we can, with a **dictionary** attack.  In dictionary attacks, we try each word/sequence in a very large list of potential passwords. We'll use an American English dictionary, `wamerican-large` which is easily included in a standard Linux installation.
 
 Now run the program again, using the dictionary file as a list of candidate passwords.
 
