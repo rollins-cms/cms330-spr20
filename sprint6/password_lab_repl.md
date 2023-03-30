@@ -88,17 +88,17 @@ Press `Ctl-C` to exit `john` if it has not already finished.
 
 ## Part 2: Dictionary Attacks
 
-Can we do better? Yes, we can, with a **dictionary** attack.  In dictionary attacks, we try each word/sequence in a very large list of potential passwords. We'll use an American English dictionary, `wamerican-large` which is easily included in a standard Linux installation.
+Can we do better? Yes, we can, with a **dictionary** attack.  In dictionary attacks, we try each word/sequence in a very large list of potential passwords. I've provided a file with a list of 400,000 English words: `words_alpha.txt`.  (For comparison, research shows that the average 20 year old knows about 42,000 words, so our file contains a sizeable list.)  Sidenote: don't think that you can get around this sort of attack by using foreign words.  Turns out, dictionaries exist in every language.
 
 Now run the program again, using the dictionary file as a list of candidate passwords.
 
 ```
-prompt$ john --wordlist=/usr/share/dict/american-english-large shadow_test
+prompt$ john --wordlist=words_alpha.txt shadow_test
 ```
 
-It will take about 20 seconds, but `john` will eventually work its way through the list to find `raspberry` and crack the password. 
-
 **Question 3**: As before, press the spacebar 3-5 times for updates as it cracks (before it finds the password) and copy/paste the output to your report.
+
+It will take about 20 seconds, but `john` will eventually work its way through the list to find `raspberry` and crack the password. 
 
 ## Part 3: Mangling
 
@@ -111,14 +111,14 @@ prompt$ openssl passwd -1 "raspberry1" > shadow_test
 John is still one step ahead of you, because it can apply **mangling rules** to the candidate wordlist to generate new passwords that match common patterns.  Let's see how long it takes to crack our password:
 
 ```
-prompt$ date;john --wordlist=/usr/share/dict/american-english-large --rules shadow_test;date
+prompt$ date;john --wordlist=words_alpha.txt --rules shadow_test;date
 ```
 
 This approach is extremely effective. People are not very creative, on average, so a good list of words and a set of common mangling patterns is enough to crack a large fraction of the hashes in a typical password database.
 
-**Question 4:** Press space a few times while the program runs.  What sort of mangling rules do you see *john* trying?  Copy and paste output which helps you identify at least 3 suspected mangling rules.
+**Question 4:** Press space a few times while the program runs.  What sort of mangling rules do you see `john` trying?  Copy and paste output which helps you identify at least 3 suspected mangling rules.
 
-**Question 5:** The `date` command causes Linux to print the system date and time in a format like: `Wed Feb 21 14:51:02 UTC 2020`.  By putting `date;` before and after the `john` command, Linux will print the system time, run `john` and then print the system time again when `john` finishes.  How much time did it take `john` to crack the password?
+**Question 5:** The `date` command causes Linux to print the system date and time in a format like: `Wed Feb 21 14:51:02 UTC 2020`.  By putting `date;` before and after the `john` command, Linux will print the system time, run `john` and then print the system time again when `john` finishes.  How much time did it take `john` to crack the mangled password?
 
 
 ## Summary: 
